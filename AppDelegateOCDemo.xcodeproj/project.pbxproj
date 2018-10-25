@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D1B205251669E6B004E573B /* libPods-AppDelegateOCDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A96B4324B8988426F30B6E0 /* libPods-AppDelegateOCDemo.a */; };
 		92DC48E62181B71700B43102 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DC48E52181B71700B43102 /* AppDelegate.m */; };
 		92DC48E92181B71700B43102 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DC48E82181B71700B43102 /* ViewController.m */; };
 		92DC48EC2181B71700B43102 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DC48EA2181B71700B43102 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A96B4324B8988426F30B6E0 /* libPods-AppDelegateOCDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AppDelegateOCDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DC48E12181B71700B43102 /* AppDelegateOCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppDelegateOCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92DC48E42181B71700B43102 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		92DC48E52181B71700B43102 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,6 +43,8 @@
 		92DC49052181BD2E00B43102 /* InitThirdServiceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitThirdServiceAppDelegate.m; sourceTree = "<group>"; };
 		92DC49072181BD8900B43102 /* AppDelegateFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegateFactory.h; sourceTree = "<group>"; };
 		92DC49082181BD8900B43102 /* AppDelegateFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegateFactory.m; sourceTree = "<group>"; };
+		CB326DA49B724881EB83FC5B /* Pods-AppDelegateOCDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDelegateOCDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppDelegateOCDemo/Pods-AppDelegateOCDemo.release.xcconfig"; sourceTree = "<group>"; };
+		E9E1ED3AEF886EF8330E227D /* Pods-AppDelegateOCDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppDelegateOCDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppDelegateOCDemo/Pods-AppDelegateOCDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,17 +52,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D1B205251669E6B004E573B /* libPods-AppDelegateOCDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40AB312CACB620834AB092EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9E1ED3AEF886EF8330E227D /* Pods-AppDelegateOCDemo.debug.xcconfig */,
+				CB326DA49B724881EB83FC5B /* Pods-AppDelegateOCDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7E641E6E7C578BE7FFA6E823 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A96B4324B8988426F30B6E0 /* libPods-AppDelegateOCDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92DC48D82181B71700B43102 = {
 			isa = PBXGroup;
 			children = (
 				92DC48E32181B71700B43102 /* AppDelegateOCDemo */,
 				92DC48E22181B71700B43102 /* Products */,
+				40AB312CACB620834AB092EC /* Pods */,
+				7E641E6E7C578BE7FFA6E823 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92DC48F72181B71A00B43102 /* Build configuration list for PBXNativeTarget "AppDelegateOCDemo" */;
 			buildPhases = (
+				2AF57B926CFA1DED677266B7 /* [CP] Check Pods Manifest.lock */,
 				92DC48DD2181B71700B43102 /* Sources */,
 				92DC48DE2181B71700B43102 /* Frameworks */,
 				92DC48DF2181B71700B43102 /* Resources */,
+				F68D4E8C2C41892107807DD6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +194,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2AF57B926CFA1DED677266B7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppDelegateOCDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F68D4E8C2C41892107807DD6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-AppDelegateOCDemo/Pods-AppDelegateOCDemo-resources.sh",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle",
+				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/Sina/SinaSDK/WeiboSDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKPromptResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TencentOpenApi_IOS_Bundle.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppDelegateOCDemo/Pods-AppDelegateOCDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		92DC48DD2181B71700B43102 /* Sources */ = {
@@ -321,6 +398,7 @@
 		};
 		92DC48F82181B71A00B43102 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9E1ED3AEF886EF8330E227D /* Pods-AppDelegateOCDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +416,7 @@
 		};
 		92DC48F92181B71A00B43102 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB326DA49B724881EB83FC5B /* Pods-AppDelegateOCDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

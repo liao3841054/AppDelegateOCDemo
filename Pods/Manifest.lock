@@ -1,0 +1,51 @@
+PODS:
+  - Bugly (2.5.0)
+  - MiPushSDK (2.2.8)
+  - UMCAnalytics (5.4.1):
+    - UMCCommon
+  - UMCCommon (1.5.2)
+  - UMengUShare/Core (6.4.8.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.8.2)
+  - UMengUShare/Social/QQ (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedQQ (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedSina (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedSina
+  - UMengUShare/Social/WeChat (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedWeChat
+
+DEPENDENCIES:
+  - Bugly
+  - MiPushSDK (~> 2.2.8)
+  - UMCAnalytics (~> 5.4.1)
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/Sina
+  - UMengUShare/Social/WeChat
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bugly
+    - MiPushSDK
+    - UMCAnalytics
+    - UMCCommon
+    - UMengUShare
+
+SPEC CHECKSUMS:
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
+  MiPushSDK: cd22d6430f8928a0920c60ff98de89ed5da146d9
+  UMCAnalytics: 44e0bb2f442b7aaf97d1c924b58798b612f2c13d
+  UMCCommon: 4392868ac47ff1b101663106bb114ba616fabbad
+  UMengUShare: 370d180101e13ee0227ae657ab119ba97243d2b3
+
+PODFILE CHECKSUM: ebfab1848b0bd4a2c38216e167908b25956addb1
+
+COCOAPODS: 1.5.3
