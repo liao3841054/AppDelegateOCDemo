@@ -1,0 +1,2 @@
+# AppDelegateOCDemo
+简化AppDelegate，采用组合模式拆分AppDelegate业务和功能
