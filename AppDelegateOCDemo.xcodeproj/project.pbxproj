@@ -13,6 +13,11 @@
 		92DC48EE2181B71A00B43102 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92DC48ED2181B71A00B43102 /* Assets.xcassets */; };
 		92DC48F12181B71A00B43102 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92DC48EF2181B71A00B43102 /* LaunchScreen.storyboard */; };
 		92DC48F42181B71A00B43102 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DC48F32181B71A00B43102 /* main.m */; };
+		92DC48FD2181B85500B43102 /* PushNotificationsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DC48FC2181B85500B43102 /* PushNotificationsAppDelegate.m */; };
+		92DC49002181BA5600B43102 /* AppearanceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DC48FF2181BA5600B43102 /* AppearanceAppDelegate.m */; };
+		92DC49032181BA8D00B43102 /* RooViewControllerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DC49022181BA8D00B43102 /* RooViewControllerAppDelegate.m */; };
+		92DC49062181BD2E00B43102 /* InitThirdServiceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DC49052181BD2E00B43102 /* InitThirdServiceAppDelegate.m */; };
+		92DC49092181BD8900B43102 /* AppDelegateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DC49082181BD8900B43102 /* AppDelegateFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		92DC48F02181B71A00B43102 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92DC48F22181B71A00B43102 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92DC48F32181B71A00B43102 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92DC48FB2181B85500B43102 /* PushNotificationsAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushNotificationsAppDelegate.h; sourceTree = "<group>"; };
+		92DC48FC2181B85500B43102 /* PushNotificationsAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushNotificationsAppDelegate.m; sourceTree = "<group>"; };
+		92DC48FE2181BA5600B43102 /* AppearanceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppearanceAppDelegate.h; sourceTree = "<group>"; };
+		92DC48FF2181BA5600B43102 /* AppearanceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppearanceAppDelegate.m; sourceTree = "<group>"; };
+		92DC49012181BA8D00B43102 /* RooViewControllerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RooViewControllerAppDelegate.h; sourceTree = "<group>"; };
+		92DC49022181BA8D00B43102 /* RooViewControllerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RooViewControllerAppDelegate.m; sourceTree = "<group>"; };
+		92DC49042181BD2E00B43102 /* InitThirdServiceAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InitThirdServiceAppDelegate.h; sourceTree = "<group>"; };
+		92DC49052181BD2E00B43102 /* InitThirdServiceAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InitThirdServiceAppDelegate.m; sourceTree = "<group>"; };
+		92DC49072181BD8900B43102 /* AppDelegateFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegateFactory.h; sourceTree = "<group>"; };
+		92DC49082181BD8900B43102 /* AppDelegateFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegateFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,7 @@
 		92DC48E32181B71700B43102 /* AppDelegateOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				92DC48FA2181B73A00B43102 /* AppDelegateInit */,
 				92DC48E42181B71700B43102 /* AppDelegate.h */,
 				92DC48E52181B71700B43102 /* AppDelegate.m */,
 				92DC48E72181B71700B43102 /* ViewController.h */,
@@ -69,6 +85,23 @@
 				92DC48F32181B71A00B43102 /* main.m */,
 			);
 			path = AppDelegateOCDemo;
+			sourceTree = "<group>";
+		};
+		92DC48FA2181B73A00B43102 /* AppDelegateInit */ = {
+			isa = PBXGroup;
+			children = (
+				92DC48FB2181B85500B43102 /* PushNotificationsAppDelegate.h */,
+				92DC48FC2181B85500B43102 /* PushNotificationsAppDelegate.m */,
+				92DC48FE2181BA5600B43102 /* AppearanceAppDelegate.h */,
+				92DC48FF2181BA5600B43102 /* AppearanceAppDelegate.m */,
+				92DC49012181BA8D00B43102 /* RooViewControllerAppDelegate.h */,
+				92DC49022181BA8D00B43102 /* RooViewControllerAppDelegate.m */,
+				92DC49042181BD2E00B43102 /* InitThirdServiceAppDelegate.h */,
+				92DC49052181BD2E00B43102 /* InitThirdServiceAppDelegate.m */,
+				92DC49072181BD8900B43102 /* AppDelegateFactory.h */,
+				92DC49082181BD8900B43102 /* AppDelegateFactory.m */,
+			);
+			path = AppDelegateInit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +177,11 @@
 				92DC48E92181B71700B43102 /* ViewController.m in Sources */,
 				92DC48F42181B71A00B43102 /* main.m in Sources */,
 				92DC48E62181B71700B43102 /* AppDelegate.m in Sources */,
+				92DC49092181BD8900B43102 /* AppDelegateFactory.m in Sources */,
+				92DC49002181BA5600B43102 /* AppearanceAppDelegate.m in Sources */,
+				92DC49032181BA8D00B43102 /* RooViewControllerAppDelegate.m in Sources */,
+				92DC49062181BD2E00B43102 /* InitThirdServiceAppDelegate.m in Sources */,
+				92DC48FD2181B85500B43102 /* PushNotificationsAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
