@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PushNotificationsAppDelegate : AppDelegate<MiPushSDKDelegate, UNUserNotificationCenterDelegate>
+@interface PushNotificationsAppDelegate : AppDelegate<MiPushSDKDelegate>
 
 @end
 

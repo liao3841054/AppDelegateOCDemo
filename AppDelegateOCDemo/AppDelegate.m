@@ -17,19 +17,11 @@
 
 @implementation AppDelegate
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
-        self.appDelegates = [AppDelegateFactory createDefault];
-    }
-    return self;
-}
-
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+ 
+    self.appDelegates = [AppDelegateFactory createDefault];
+
     [self.appDelegates enumerateObjectsUsingBlock:^(AppDelegate * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [obj application:application didFinishLaunchingWithOptions:launchOptions];
     }];
@@ -79,5 +71,60 @@
     }];
 }
 
+
+
+#pragma mark -
+#pragma mark - iOS9 universonl link
+
+- (BOOL)application:(UIApplication *)application willContinueUserActivityWithType:(nonnull NSString *)userActivityType {
+    
+    [self.appDelegates enumerateObjectsUsingBlock:^(AppDelegate * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj application:application willContinueUserActivityWithType:userActivityType];
+    }];
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray *))restorationHandler
+{
+    __block __result = NO;
+    [self.appDelegates enumerateObjectsUsingBlock:^(AppDelegate * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        __result =  [obj application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
+        if (__result) {
+            *stop = YES;
+        }
+    }];
+    return __result;
+}
+
+#pragma mark -  handleOpenURL
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
+{
+    __block __result = NO;
+    [self.appDelegates enumerateObjectsUsingBlock:^(AppDelegate * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        __result =  [obj application:application handleOpenURL:url];
+        if (__result) {
+            *stop = YES;
+        }
+    }];
+    return __result;
+}
+
+// iOS 7&8
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    __block __result = NO;
+    [self.appDelegates enumerateObjectsUsingBlock:^(AppDelegate * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        __result = [obj application:application openURL:url sourceApplication:sourceApplication annotation:annotation];
+        if (__result) {
+            *stop = YES;
+        }
+    }];
+    return __result;
+    
+}
 
 @end
